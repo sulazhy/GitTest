@@ -30,7 +30,7 @@ jobs:
       - name: Install AWS CDK
         run: 'sudo npm install -g aws-cdk'
 
-        - name: List Stacks
+      - name: List Stacks
         run: 'cdk ls'
 
       - name: CDK Synth
