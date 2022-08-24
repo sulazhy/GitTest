@@ -43,5 +43,5 @@ jobs:
         working-directory: ./
 
       - name: CDK Deploy
-        run: cdk deploy
+        run: cdk deploy -y
         working-directory: ./
