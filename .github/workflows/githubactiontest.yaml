@@ -32,8 +32,8 @@ jobs:
 
       - name: CDK Synth
         run: cdk synth
-        working-directory: GHAction
+        working-directory: ./
 
       - name: CDK Deploy
         run: cdk deploy
-        working-directory: GHAction
+        working-directory: ./
