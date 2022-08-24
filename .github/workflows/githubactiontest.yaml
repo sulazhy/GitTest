@@ -28,8 +28,10 @@ jobs:
         run: 'sudo apt update -y && sudo apt install nodejs npm -y'
 
       - name: Install AWS CDK
-        run: 'sudo npm install -g aws-cdk && sudo npm install -g aws-cdk-lib'
+        run: 'sudo npm install -g typescript && sudo npm install -g ts-node'
 
+      - name: Install AWS CDK 2
+        run: 'sudo npm install -g aws-cdk && sudo npm install -g aws-cdk-lib'
       - name: List Stacks
         run: 'cdk ls'
 
