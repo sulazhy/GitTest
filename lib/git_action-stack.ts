@@ -21,7 +21,7 @@ export class GitActionStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       encryption: s3.BucketEncryption.KMS,
       // 👇 encrypt with our KMS key
-      encryptionKey: key,
+      //encryptionKey: key,
     });
 
     new cdk.CfnOutput(this, 'key-arn', {
