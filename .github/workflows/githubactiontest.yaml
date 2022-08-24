@@ -35,13 +35,11 @@ jobs:
 
       - name: Install AWS CDK 2
         run: 'sudo npm install -g aws-cdk && sudo npm install -g aws-cdk-lib'
-      - name: List Stacks
-        run: 'cdk ls'
-
+     
       - name: CDK Synth
         run: cdk synth 
         working-directory: ./
 
       - name: CDK Deploy
-        run: cdk deploy -y
+        run: cdk deploy --require-approval never
         working-directory: ./
