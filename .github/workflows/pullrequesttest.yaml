@@ -1,9 +1,9 @@
 name: Demo test for pull request
 
 on:
-  push:
-    branches:
-      - master
+  #push:
+    #branches:
+      #- master
 
 jobs:
   updateAuthor:
