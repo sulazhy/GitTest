@@ -20,6 +20,6 @@ new GitActionStack(app, 'GitActionStack', {
     region: 'us-east-1' },
 
     //Adding another line to test the 
-    //Another addition
+    //Another addition checking further
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });
