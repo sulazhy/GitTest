@@ -1,7 +1,7 @@
 on:
   push: 
     branches:
-      - master
+      - new-branch
 
 jobs:
   updateAuthor:
@@ -20,11 +20,12 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           branch: "auto-pr-branch"
-          base: master
-          title: "Demo for auto Pr"
+          base: new-branch
+          title: "Demo Test for auto Pull Request"
           committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}>
           author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}>
           body: 
-            This is the automatic pr creation
+            This is the test automatic pull request creation and up for your review
           token: ${{ secrets.GITHUB_TOKEN }}
+          reviewers: sulazhy
           delete-branch: true
